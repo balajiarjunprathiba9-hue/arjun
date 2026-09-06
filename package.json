@@ -1,0 +1,14 @@
+{
+  "name": "interactive-db-visualizer",
+  "version": "1.0.0",
+  "description": "Interactive Database System Structure Visualization Tool for Engineering Education",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "server": "npm start --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
